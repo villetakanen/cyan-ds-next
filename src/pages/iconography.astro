@@ -1,0 +1,30 @@
+---
+import Page from "../layout/page.astro";
+import Iconlist from "../components/iconlist.astro";
+---
+<Page>
+  <h1>Iconography</h1>
+  <article class="side-by-side breakout">
+    <section class="half light">
+      <Iconlist />
+    </section>
+    <section class="half dark">
+        <Iconlist />
+      </section>
+  </article>
+</Page>
+
+<style lang="sass">
+.side-by-side
+  display: flex
+  flex-direction: row
+  flex-wrap: no-wrap
+  justify-content: space-between
+  align-items: flex-start
+  align-content: flex-start
+  .half
+    padding: var(--cn-gap)
+    width: 50%
+    display: flex
+    gap: var(--cn-gap)
+</style>

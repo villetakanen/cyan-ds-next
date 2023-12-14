@@ -1,10 +1,38 @@
+---
+const currentPath = Astro.url.pathname;
+
+type RailItem = {
+  label?: string;
+  href: string;
+  icon: string;
+}
+
+const rail:Array<RailItem> = [
+  {
+    href: '/',
+    icon: 'd20',
+  },
+  {
+    href: '/iconography',
+    icon: 'design',
+    label: 'Icons',
+  },
+  {
+    href: '/design-tokens',
+    icon: 'tokens',
+    label: 'Tokens',
+  },
+]
+
+---
 <nav class="rail">
-  <cn-navigation-icon noun="design"></cn-navigation-icon>
-  <a href="/iconography">
-    <cn-navigation-icon noun="design" label="Icons"></cn-navigation-icon>
-  </a>
-  <cn-navigation-icon noun="design" label="Iconogragpy"></cn-navigation-icon>
-  <a href="/design-tokens">
-    <cn-navigation-icon noun="tokens" label="Design Tokens"></cn-navigation-icon>
-  </a>
+{ rail.map((item) => {
+  const isActive = currentPath === item.href;
+  return (
+    <a href={item.href}>
+      <cn-navigation-icon noun={item.icon} label={item.label} checked={currentPath === item.href}></cn-navigation-icon>
+    </a>
+  )
+})
+}
 </nav>

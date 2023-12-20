@@ -1,13 +1,16 @@
 ---
+import AppBar from "../components/app-bar.astro";
 import Basehead from "../components/basehead.astro";
 import Rail from "../components/rail.astro";
 
+const { title } = Astro.props;
 ---
 
 <html lang="en">
 	<Basehead title="Cyan Design System" />
 	<body>
 	  <Rail />
+	  <AppBar title={title || ''}/>
 	  <main style="margin-left: 96px" class="content-grid">
 		<slot></slot>
 	</body>

@@ -1,0 +1,50 @@
+---
+import Page from "../layout/page.astro";
+---
+<Page title="Inputs">
+  <h1>Controls & Inputs</h1>
+
+  <artcile class="breakout elevation-1">
+    <h2 style="display: flex; gap: var(--cn-gap)">
+      <cn-icon noun="gamepad" large></cn-icon>
+        Buttons</h2>
+    <p>We provide button styling for HTML <code>{'<button>'}</code> and <code>{'<a class="button">'}</code> elements.</p>
+    <p>A button has three substyles: [default], <code>.text</code> and <code>.call-to-action</code>. All three
+      styles support styled pseudo-classes for <code>:active</code>, <code>:hover</code>, and <code>:disabled</code></p>
+      
+    <table>
+      <thead>
+        <tr>
+          <th>button</th>
+          <th>a.button</th>
+        </tr>
+      </thead>
+        <tbody>
+            <tr>
+            <td>
+                <button>Default</button>
+            </td>
+            <td>
+                <a class="button">Default</a>
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <button class="text">Text</button>
+            </td>
+            <td>
+                <a class="button text">Text</a>
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <button class="call-to-action">Call to Action</button>
+            </td>
+            <td>
+                <a class="button call-to-action">Call to Action</a>
+            </td>
+            </tr>
+    </table>
+  </artcile>
+
+</Page>

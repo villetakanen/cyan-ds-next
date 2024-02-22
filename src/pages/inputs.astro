@@ -3,8 +3,8 @@ import Page from "../layout/page.astro";
 ---
 <Page title="Inputs">
   <h1>Controls & Inputs</h1>
-
-  <artcile class="breakout elevation-1">
+<!-- 
+  <article class="breakout elevation-1">
     <h2 style="display: flex; gap: var(--cn-gap)">
       <cn-icon noun="gamepad" large></cn-icon>
         Buttons</h2>
@@ -45,7 +45,7 @@ import Page from "../layout/page.astro";
             </td>
             </tr>
     </table>
-  </artcile>
+  </article> -->
 
   <h2>cn-share-button</h2>
 
@@ -66,6 +66,16 @@ import Page from "../layout/page.astro";
           <td>
             <cn-share-button></cn-share-button>
           </td>
+        </tr>
+        <tr>
+          <td>
+            <pre><code>&lt;cn-share-button label="Jaa" /&gt;</code></pre>
+          </td>
+          <td>
+            <cn-share-button label="Jaa"></cn-share-button>
+          </td>
+        </tr>
+      </tbody>
     </table>
   </article>
 

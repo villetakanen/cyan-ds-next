@@ -3,7 +3,6 @@ import Page from "../layout/page.astro";
 ---
 <Page title="Inputs">
   <h1>Controls & Inputs</h1>
-<!-- 
   <article class="breakout elevation-1">
     <h2 style="display: flex; gap: var(--cn-gap)">
       <cn-icon noun="gamepad" large></cn-icon>
@@ -45,7 +44,15 @@ import Page from "../layout/page.astro";
             </td>
             </tr>
     </table>
-  </article> -->
+  </article>
+
+  <h2>cn-snackstack</h2>
+
+  <article>
+    <p>A Snackbar. Takes an object as an event.</p>
+    <button id="pushtosn">Push to snackbar</button>
+    <button id="pushtosn_and_alert">Push to snackbar with alert action.</button>
+  </article>
 
   <h2>cn-share-button</h2>
 
@@ -80,3 +87,32 @@ import Page from "../layout/page.astro";
   </article>
 
 </Page>
+
+<script lang="ts">
+  document.getElementById('pushtosn').addEventListener('click', () => {
+    console.log('pushtosn');
+    window.dispatchEvent(new CustomEvent('cn-snackbar-add', {
+      bubbles: true,
+      detail: {
+        message: 'This is a snackbar message'
+      }
+    }));
+  });
+
+  document.getElementById('pushtosn_and_alert').addEventListener('click', () => {
+    console.log('pushtosn_and_alert');
+    window.dispatchEvent(new CustomEvent('cn-snackbar-add', {
+      bubbles: true,
+      detail: {
+        message: 'This is a snackbar message with an alert action',
+        action: {
+          label: 'Alert',
+          callback: () => {
+            alert('You clicked the alert action');
+          }
+        }
+      }
+    }));
+  });
+
+</script>

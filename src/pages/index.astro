@@ -1,26 +1,14 @@
 ---
-import Basehead from "../components/basehead.astro";
-import Rail from "../components/rail.astro";
-import Ported from "../components/docs/ported.md";
-import AppBar from "../components/app-bar.astro";
-
+import Ported from '../components/docs/ported.md';
+import Page from '../layout/page.astro';
 ---
 
-<html lang="en">
-	<Basehead title="Cyan Design System" />
-	<body>
-	  <Rail />
-	  <AppBar title="Cyan Design System"/>
-	  <main style="padding-left: 96px">
-		<div  class="content-grid">
-		<h1 style="width:100%">Cyan Design System</h1>
-		<cn-icon noun="d20"/>
-		<cn-icon noun="arrow" small/>
-	  
+<Page>
+  <h1 style="width:100%">Cyan Design System</h1>
+  <cn-icon noun="d20"></cn-icon>
+  <cn-icon noun="arrow" small></cn-icon>
 
-	  <article>
-		<Ported />
-	  </article>
-    </main>
-  </body>
-</html>
+  <article>
+    <Ported />
+  </article>
+</Page>

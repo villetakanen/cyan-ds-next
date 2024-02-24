@@ -5,9 +5,9 @@ type RailItem = {
   label?: string;
   href: string;
   icon: string;
-}
+};
 
-const rail:Array<RailItem> = [
+const rail: Array<RailItem> = [
   {
     href: '/',
     icon: 'd20',
@@ -26,18 +26,25 @@ const rail:Array<RailItem> = [
     href: '/inputs',
     icon: 'gamepad',
     label: 'inputs',
-  }
-]
-
+  },
+  { href: '/color-theme', icon: 'color', label: 'Color Theme' },
+];
 ---
+
 <nav class="rail">
-{ rail.map((item) => {
-  const isActive = currentPath === item.href;
-  return (
-    <a href={item.href}>
-      <cn-navigation-icon noun={item.icon} label={item.label} checked={currentPath === item.href}></cn-navigation-icon>
-    </a>
-  )
-})
-}
+  {
+    rail.map((item) => {
+      const isActive = currentPath === item.href;
+      return (
+        <a href={item.href}>
+          <cn-navigation-icon
+            !active = {isActive}
+            noun={item.icon}
+            label={item.label}
+            checked={currentPath === item.href}
+          />
+        </a>
+      );
+    })
+  }
 </nav>

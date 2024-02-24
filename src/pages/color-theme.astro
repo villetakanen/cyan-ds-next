@@ -1,0 +1,17 @@
+---
+import Page from '../layout/page.astro';
+import PaletteColorDemo from '../components/palette-color-demo.astro';
+---
+
+<Page>
+  <h1 style="width:100%">Color Theme</h1>
+  <article>
+    <h2>Base colors</h2>
+    <div class="asset-grid">
+      <PaletteColorDemo name="--color-primary" />
+      <PaletteColorDemo name="--color-on-primary" />
+      <PaletteColorDemo name="--color-contrast" />
+      <PaletteColorDemo name="--color-on-contrast" />
+    </div>
+  </article>
+</Page>

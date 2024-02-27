@@ -10,10 +10,20 @@ const webcomponents = defineCollection({
       required: z.boolean(),
       description: z.string(),})).optional(),
   }),
-  /* ... */
 });
+
+const inputs = defineCollection({
+  type: 'content',
+  schema: z.object({
+    name: z.string(),
+    noun: z.string().optional(),
+  }),
+});
+
+
 // 3. Export a single `collections` object to register your collection(s)
 //    This key should match your collection directory name in "src/content"
 export const collections = {
   webcomponents,
+  inputs,
 };

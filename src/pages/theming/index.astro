@@ -1,9 +1,11 @@
 ---
-import Page from '../layout/page.astro';
-import PaletteColorDemo from '../components/palette-color-demo.astro';
+import ContentIndexTray from '../../components/ContentIndexTray.astro';
+import PaletteColorDemo from '../../components/palette-color-demo.astro';
+import Page from '../../layout/page.astro';
 ---
 
 <Page>
+  <ContentIndexTray slot="app-tray" collection="theming" />
   <h1 style="width:100%">Color Theme</h1>
   <article>
     <h2>Base colors</h2>

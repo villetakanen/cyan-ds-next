@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 const allComponents = await getCollection('webcomponents');
 ---
-<h3>Web Components</h3>
+<h3>Components</h3>
 <ul>
   {allComponents.map(p => (
     <li><a href={'/webcomponents/'+p.slug}>{p.data.name}</a></li>

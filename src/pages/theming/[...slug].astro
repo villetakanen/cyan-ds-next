@@ -15,12 +15,8 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Page>
+<Page title={entry.data.name} noun={entry.data.noun}>
   <ContentIndexTray slot="app-tray" collection="theming" />
-  <h1>
-    {entry.data.noun ? <cn-icon noun={entry.data.noun} /> : ''}
-    {entry.data.name}
-  </h1>
   <article>
     <Content />
   </article>

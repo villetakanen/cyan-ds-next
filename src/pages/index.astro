@@ -1,14 +1,14 @@
 ---
 import Ported from '../components/docs/ported.md';
+import Installation from '../components/docs/installation.md';
 import Page from '../layout/page.astro';
 ---
 
-<Page>
-  <h1 style="width:100%">Cyan Design System</h1>
-  <cn-icon noun="d20"></cn-icon>
-  <cn-icon noun="arrow" small></cn-icon>
+<Page noun="cyan">
+  <h1>Cyan <span class="secondary">[NEXT]</span></h1>
 
   <article>
+    <Installation />
     <Ported />
   </article>
 </Page>

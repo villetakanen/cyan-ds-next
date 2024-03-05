@@ -10,9 +10,7 @@ const { title } = Astro.props;
   <Basehead title="Cyan Design System" />
   <body>
     <Rail />
-    <nav class="cn-app-tray">
-      <slot name="app-tray" />
-    </nav>
+    <nav class="cn-app-tray"><slot name="app-tray" /></nav>
     <AppBar title={title || ''} />
     <main style="margin-left: 96px" class="content-grid">
       <slot />

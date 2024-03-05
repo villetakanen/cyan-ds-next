@@ -17,7 +17,7 @@ const { Content } = await entry.render();
 
 <Page>
   <ContentIndexTray slot="app-tray" collection="inputs"/>
-  <h1>
+  <h1 class="small">
     {entry.data.noun ?  <cn-icon noun={entry.data.noun}></cn-icon> : ''}
     <code>{entry.data.name}</code>
   </h1>

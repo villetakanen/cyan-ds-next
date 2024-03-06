@@ -3,7 +3,14 @@ import { getCollection } from 'astro:content';
 
 const { collection } = Astro.props;
 
-const allComponents = await getCollection(collection);
+type collectionIten = {
+  slug: string;
+  data: {
+    name: string;
+  }
+}
+
+const allComponents = await getCollection(collection) as collectionIten[];
 ---
 
 <h3>Layout</h3>

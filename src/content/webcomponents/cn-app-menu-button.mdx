@@ -1,0 +1,28 @@
+---
+name: 'cn-app-menu-button'
+---
+
+<h1 class="small">cn-app-menu-button</h1>
+
+The `cn-app-menu-button` component is a microinteractive toggle button that is used to open
+and close the application menu on medium and small screens.
+
+import CnAppMenuButtonDemo from '../../components/demo/CnAppMenuuttonDemo.astro'
+
+<CnAppMenuButtonDemo />
+
+### Parameters
+
+| Parameter | Type | Default | Description |
+| --- | --- | --- | --- |
+| `ariaExpanded` | `boolean` | `false` | The aria-expanded attribute value, used to toggle the menu |
+| `ariaLabel` | `string` | `Menu` | The aria-label attribute value, used to describe the button |
+| `ariaControls` | `string` | `#cn-tray` | The aria-controls attribute value, used to link the button with the menu |
+
+### Events
+
+The `cn-app-menu-button` component emits the following events:
+
+| Event | Detail | Description |
+| --- | --- | --- |
+| `change` | `boolean` matching the new value of `ariaExpanded` | The change event is emitted when the button is clicked and the aria-expanded attribute value changes |

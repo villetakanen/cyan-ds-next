@@ -1,9 +1,16 @@
 ---
 const { title } = Astro.props;
 
-const pageTitle = title || "Cyan Design System [NEXT]" 
+const pageTitle = title || "Cyan Design System [NEXT]" 
 ---
-<header class="cn-app-bar">
+<header class="cn-app-bar appBar">
   <h3>{ pageTitle }</h3>
   <slot></slot>
 </header>
+
+<style>
+.appBar {
+  margin-left: 80px;
+  margin-top: 8px;
+}
+</style>

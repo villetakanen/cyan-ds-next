@@ -11,6 +11,19 @@ import CnAppMenuButtonDemo from '../../components/demo/CnAppMenuuttonDemo.astro'
 
 <CnAppMenuButtonDemo />
 
+### Usage
+
+To place the menu button in the top left corner of the screen, use the following code. Additionally, 
+it migh make sense to add a `hide-on-desktop` class to the button to hide it on large screens.
+
+```css
+.appMenuButton {
+  position: fixed;
+  top: var(--cn-grid-size);
+  left: calc(var(--cn-grid-size) * 1.5);
+}
+```
+
 ### Parameters
 
 | Parameter | Type | Default | Description |

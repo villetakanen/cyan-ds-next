@@ -6,11 +6,12 @@ const pageTitle = title || "Cyan Design System [NEXT]"
 <header class="cn-app-bar appBar">
   <h3>{ pageTitle }</h3>
   <slot></slot>
+  <div style="flex: 1"></div>
+  <cn-lightmode-button></cn-lightmode-button>
 </header>
 
 <style>
 .appBar {
   margin-left: 80px;
-  margin-top: 8px;
 }
 </style>

@@ -4,6 +4,28 @@ name: 'cn-card'
 
 # cn-card
 
+A card is a fixed container for a piece of content. It can be used to display a
+small amount of information, or to highlight a piece of content.
+
+<section class="flex flex-no-wrap">
+  <cn-card 
+    title="101"
+    description="A Card"
+    noun="fox">
+</cn-card>
+        <cn-card
+          title="102"
+          elevation="2"
+          noun="mekanismi"
+          snippet="A Second Card"></cn-card>
+        <cn-card 
+          title="203"
+          elevation="3"
+          noun="card"
+          snippet="A Third oOne"></cn-card>
+      </section>
+
+
 <div class="flex border p-1">
   <cn-card>
     <h4 slot="title">Card Title</h4>

@@ -4,6 +4,7 @@ const webcomponents = defineCollection({
   type: 'content',
   schema: z.object({
     name: z.string(),
+    noun: z.string().optional(),
     params: z.array(z.object({
       name: z.string(),
       type: z.string(),

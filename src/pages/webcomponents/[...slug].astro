@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
-<Page title={entry.data.name}>
+<Page title={entry.data.name} noun={entry.data.noun}>
   <WebComponentTray slot="app-tray"></WebComponentTray>
   <Content />
 </Page>

@@ -1,10 +1,12 @@
 ---
-const { title } = Astro.props;
+const { title, noun } = Astro.props;
 
 const pageTitle = title || "Cyan Design System [NEXT]" 
 ---
 <header class="cn-app-bar appBar">
-  <h3>{ pageTitle }</h3>
+  <h3>
+    { noun && <cn-icon noun={noun} style="margin-right: 8px"></cn-icon> }
+    { pageTitle }</h3>
   <slot></slot>
   <div style="flex: 1"></div>
   <cn-lightmode-button></cn-lightmode-button>

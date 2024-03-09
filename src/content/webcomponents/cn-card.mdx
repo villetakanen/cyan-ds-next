@@ -1,0 +1,64 @@
+---
+name: 'cn-card'
+noun: 'card'
+---
+
+# Cards
+
+A `cn-card` is a fixed container for a piece of content. It can be used to display a
+small amount of information, or to highlight a piece of content.
+
+<section class="flex flex-no-wrap">
+  <cn-card 
+    title="101"
+    description="A Card"
+    noun="fox">
+  </cn-card>
+  <cn-card
+    title="102"
+    elevation="2"
+    noun="mekanismi"
+    description="A Second Card">
+  </cn-card>
+  <cn-card 
+    title="203"
+    elevation="3"
+    noun="card"
+    description="A Third one">
+  </cn-card>
+</section>
+
+## Elevation
+
+The cards support 5 levels of elevation (starting from 0). The default elevation of a card is 1.
+
+import CnCardElevationDemo from '../../components/demo/CnCardElevationDemo.astro'
+
+<CnCardElevationDemo/>
+
+## Full example
+
+<cn-card
+  noun="d12"
+  cover="/images/mountains.jpg"
+  title="A title."
+  description="The description of the card."
+>
+  <div slot="actions" class="flex">
+    <cn-icon noun="mekanismi"></cn-icon>
+    <button>Click me</button>
+    <div style="flex-grow: 1"></div>
+    <button class="text">Click me</button>
+  </div>
+</cn-card>
+
+## Parameters
+
+| Parameter | Type | Default | Description |
+| --- | --- | --- | --- |
+| `elevation` | Number | 1 | The elevation of the card. |
+| `cover` | String | `undefined` | The URL of the cover image. |
+| `noun` | String | `undefined` | The noun of the card. |
+| `title` | String | '' | The title of the card. |
+| `description` | String | '' | The description of the card. |
+| `link` | String | '' | The URL to link to when the card title or cover is clicked. |

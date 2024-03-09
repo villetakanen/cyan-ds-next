@@ -4,7 +4,7 @@ import AppMenuButton from '../components/app/AppMenuButton.astro';
 import Basehead from '../components/basehead.astro';
 import Rail from '../components/rail.astro';
 
-const { title } = Astro.props;
+const { title, noun } = Astro.props;
 ---
 
 <html lang="en">
@@ -13,7 +13,7 @@ const { title } = Astro.props;
     <AppMenuButton />
     <Rail />
     <nav class="cn-app-tray"><slot name="app-tray" /></nav>
-    <AppBar title={title || ''} />
+    <AppBar title={title || ''} noun={noun || ''}/>
     <main class="content-grid">
       <slot />
     </main>

@@ -6,8 +6,9 @@ import Page from '../../layout/page.astro';
 
 <Page>
   <ContentIndexTray slot="app-tray" collection="theming" />
+  <article class="content-grid">
   <h1 style="width:100%">Color Theme</h1>
-  <article>
+  <section>
     <h2>Base colors</h2>
     <div class="asset-grid">
       <PaletteColorDemo name="--color-primary" />
@@ -17,7 +18,7 @@ import Page from '../../layout/page.astro';
       <PaletteColorDemo name="--color-contrast" />
       <PaletteColorDemo name="--color-on-contrast" />
     </div>
-  </article>
+  </section>
   <section>
     <h2>Chroma 2.0.0-alpha.1 palette</h2>
     <h3>Key color</h3>
@@ -33,4 +34,5 @@ import Page from '../../layout/page.astro';
     <PaletteColorDemo name="--chroma-key-95" />
     <PaletteColorDemo name="--chroma-key-99" />
   </section>
+  </article>
 </Page>

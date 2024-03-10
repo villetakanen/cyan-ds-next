@@ -1,5 +1,5 @@
 ---
-name: '<nav class="rail">'
+name: '<nav class="cn-rail">'
 ---
 
 Navigation rail works best with `hide-on-mobile`class, which hides the rail on mobile devices.

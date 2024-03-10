@@ -12,7 +12,7 @@ const { title, noun } = Astro.props;
   <body>
     <AppMenuButton />
     <Rail />
-    <nav class="cn-app-tray"><slot name="app-tray" /></nav>
+    <nav class="cn-tray"><slot name="app-tray" /></nav>
     <AppBar title={title || ''} noun={noun || ''}/>
     <main class="content-grid">
       <slot />

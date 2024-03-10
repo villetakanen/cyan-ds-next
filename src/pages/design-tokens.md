@@ -8,13 +8,14 @@ are defined in the `src/styles/core/default-desing-tokens.sass` file.
 
 ### Layout
 
-| Name            | Default value                 | Description |
-| --------------- | ----------------------------- | ----------- |
-| --cn-grid-size  | 0.5em                         | The size of the grid unit |
-| --cn-gap        | calc(var(--cn-grid-size) * 2) | ~1em, The gap between elements |
-| --cn-width-rail | 80px                          | The width of the rail |
+| Name            | Default value                  | ~     | Description |
+| --------------- | ------------------------------ | ----- | ----------- |
+| --cn-grid-size  | `0.5em`                        | `8px`  |The size of the grid unit |
+| --cn-gap        | --cn-grid-size * 2  | 16px  |~1em, The gap between elements |
+| --cn-rail-width | --cn-grid-size * 10 | 80px  |The width of the navigation rail |
+| --cn-tray-width | --cn-grid-size * 40 | 320px |The width of the navigation tray |
 
-** Content Grid **
+#### Content Grid
 
 `.content-grid` is an atomic container style that can be used to create a simple layout.
 

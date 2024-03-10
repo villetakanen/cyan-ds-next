@@ -14,7 +14,7 @@ const { title, noun } = Astro.props;
     <Rail />
     <nav class="cn-tray"><slot name="app-tray" /></nav>
     <AppBar title={title || ''} noun={noun || ''}/>
-    <main class="content-grid">
+    <main>
       <slot />
     </main>
     <cn-snackbar></cn-snackbar>

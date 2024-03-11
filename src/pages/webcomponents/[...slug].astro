@@ -15,5 +15,7 @@ const { Content } = await entry.render();
 ---
 <Page title={entry.data.name} noun={entry.data.noun}>
   <WebComponentTray slot="app-tray"></WebComponentTray>
-  <Content />
+  <article class="content-grid">
+    <Content />
+  </article>
 </Page>

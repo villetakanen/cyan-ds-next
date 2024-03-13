@@ -16,6 +16,9 @@ const { title, noun } = Astro.props;
     <AppBar title={title || ''} noun={noun || ''}/>
     <main>
       <slot />
+      <footer>
+        ...
+      </footer>
     </main>
     <cn-snackbar></cn-snackbar>
   </body>

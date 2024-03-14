@@ -23,8 +23,12 @@ from licenced sources (such as a paid Noun Project account) or created in-house.
 | <cn-icon noun="delete"></cn-icon> | `delete` | A trash can, used for deleting Entries |
 | <cn-icon noun="design"></cn-icon> | `design` | Heraldic Lily, branding for cyan |
 | <cn-icon noun="discussion"></cn-icon> | `discussion` | Speech bubbles, discussion |
+| <cn-icon noun="font"></cn-icon> | `font` | Cyan branding |
 | <cn-icon noun="fox"></cn-icon> | `fox` | Pelilauta branding main icon |
+| <cn-icon noun="gamepad"></cn-icon> | `gamepad` | Gamepad. |
 | <cn-icon noun="ll-ampersand"></cn-icon> | `ll-ampersand` | L&L logo, fair use |
 | <cn-icon noun="mekanismi"></cn-icon> | `mekanismi` | Mekanismi wiki branding  |
+| <cn-icon noun="myrrys-scarlet"></cn-icon> | `myrrys-scarlet` | Myrrys Oy company branding, fair use |
 | <cn-icon noun="moon"></cn-icon> | `moon` | Light-mode toggle, and other light-mode related actions |
+| <cn-icon noun="thequick"></cn-icon> | `thequick` | Myrrys / The Quick branding, fair use |
 | <cn-icon noun="veil-advance"></cn-icon> | veil-advance | A filler icon for demo purposes |

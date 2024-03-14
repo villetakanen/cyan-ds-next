@@ -37,7 +37,7 @@ Overrides content-grid, if present (grid-columns: full width).
     <h2>Column 1</h2>
     <p>Content</p>
   </div>
-  <cn-card title="101" elevation="0" class="small-width" cover="/images/lego-1.png"></cn-card>
+  <cn-card noun="thequick" title="101" elevation="0" class="small-width" cover="/images/lego-1.png"></cn-card>
   <div class="small-width elevation-3">
     <h2>Column 2</h2>
     <p>Content</p>

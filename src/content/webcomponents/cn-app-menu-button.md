@@ -7,9 +7,14 @@ name: 'cn-app-menu-button'
 The `cn-app-menu-button` component is a microinteractive toggle button that is used to open
 and close the application menu on medium and small screens.
 
-import CnAppMenuButtonDemo from '../../components/demo/CnAppMenuuttonDemo.astro'
-
-<CnAppMenuButtonDemo />
+<div class="flex">
+  <div class="elevation-1 p-1">
+    <cn-app-menu-button></cn-app-menu-button>
+  </div>
+  <div class="elevation-1 p-1 light">
+    <cn-app-menu-button aria-expanded="true"></cn-app-menu-button>
+  </div>
+</div>
 
 ### Usage
 

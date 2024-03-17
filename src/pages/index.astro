@@ -2,15 +2,17 @@
 import Ported from '../components/docs/ported.md';
 import Installation from '../components/docs/installation.md';
 import Page from '../layout/page.astro';
+import Intro from '../components/home/intro.md';
 ---
 
 <Page>
-  <article class="content-grid">
-  <h1>Cyan <span class="secondary">[NEXT]</span></h1>
-
-  <section>
-    <Installation />
-    <Ported />
-  </section>
-  </article>
+  <div class="content-columns">
+    <article class="large-width">
+      <Intro />
+      <Ported />
+    </article>
+    <article class="small-width downscaled">
+     <Installation />
+    </article>
+  </div>
 </Page>

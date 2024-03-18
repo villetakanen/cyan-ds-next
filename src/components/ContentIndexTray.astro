@@ -7,6 +7,7 @@ type collectionIten = {
   slug: string;
   data: {
     name: string;
+    noun: string|undefined;
   }
 }
 
@@ -18,7 +19,9 @@ const allComponents = await getCollection(collection) as collectionIten[];
   {
     allComponents.map((p) => (
       <li>
-        <a href={'/' + collection + '/' + p.slug}>{p.data.name}</a>
+        <a href={'/' + collection + '/' + p.slug}>
+          {p.data.noun && <cn-icon noun={p.data.noun} small></cn-icon>}
+          {p.data.name}</a>
       </li>
     ))
   }

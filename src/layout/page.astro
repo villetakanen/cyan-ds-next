@@ -1,6 +1,5 @@
 ---
 import AppBar from '../components/app-bar.astro';
-import AppMenuButton from '../components/app/AppMenuButton.astro';
 import Basehead from '../components/basehead.astro';
 import Rail from '../components/rail.astro';
 
@@ -10,7 +9,6 @@ const { title, noun } = Astro.props;
 <html lang="en">
   <Basehead title="Cyan Design System" />
   <body>
-    <AppMenuButton />
     <Rail />
     <nav class="cn-tray"><slot name="app-tray" /></nav>
     <AppBar title={title || ''} noun={noun || ''}/>

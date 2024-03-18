@@ -4,6 +4,7 @@ const { title, noun } = Astro.props;
 const pageTitle = title || "Cyan Design System [NEXT]" 
 ---
 <header class="cn-app-bar appBar">
+  <cn-app-menu-button></cn-app-menu-button>
   <h3>
     { noun && <cn-icon noun={noun} style="margin-right: 8px"></cn-icon> }
     { pageTitle }</h3>
@@ -11,9 +12,3 @@ const pageTitle = title || "Cyan Design System [NEXT]"
   <div style="flex: 1"></div>
   <cn-lightmode-button></cn-lightmode-button>
 </header>
-
-<style>
-.appBar {
-  margin-left: 80px;
-}
-</style>

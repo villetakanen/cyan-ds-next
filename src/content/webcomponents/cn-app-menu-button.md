@@ -24,8 +24,8 @@ it migh make sense to add a `hide-on-desktop` class to the button to hide it on 
 ```css
 .appMenuButton {
   position: fixed;
-  top: var(--cn-grid-size);
-  left: calc(var(--cn-grid-size) * 1.5);
+  top: var(--cn-grid);
+  left: calc(var(--cn-grid) * 1.5);
 }
 ```
 

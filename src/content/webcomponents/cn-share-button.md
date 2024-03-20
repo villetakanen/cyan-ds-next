@@ -5,11 +5,17 @@ noun: 'share'
 
 # cn-share-button
 
+A button with integrated sharing functionality. On click, the button checks if the browser
+supports the Web Share API and uses it if available. If not, it falls back to a simple
+copy-to-clipboard functionality.
+
+A `copy` event is emitted when the content is copied to the clipboard, for App integration.
+
 ## Usage
 
 <div class="flex">
   <div class="border p-1">
-    <cn-share-button></cn-share-button>
+    <cn-share-button label="This is the label!"></cn-share-button>
   </div>
 </div>
 
@@ -17,7 +23,7 @@ noun: 'share'
 <cn-share-button
   url="https://example.com"
   title="Example"
-  label="Share"
+  label="This is the label!"
   noun="fox"
 ></cn-share-button>
 ```

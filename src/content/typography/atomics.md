@@ -38,3 +38,15 @@ name: "Atomics"
 | `mb-0` | removes bottom margin from the element |
 | `mb-1` | adds `--cn-grid` (8px) bottom margin to the element |
 
+### Flex
+
+| Class | Description |
+| ----- | ----------- |
+| `.flex` | `display: flex` |
+| `.flex-column` | `flex-direction: column` |
+
+#### Flex Items
+
+| Class | Description |
+| ----- | ----------- |
+| `.justify-self-center` | Centers the item horizontally |

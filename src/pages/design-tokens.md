@@ -2,7 +2,7 @@
 layout: '../layout/page.astro'
 ---
 <div class="content-columns">
-  <div class="column-large">
+  <div class="column-l">
 
 # Desing tokens
 

@@ -6,7 +6,8 @@ import Page from '../../layout/page.astro';
 
 <Page>
   <ContentIndexTray slot="app-tray" collection="theming" />
-  <article class="content-grid">
+  <div class="content-columns">
+  <article class="column-l">
   <h1 style="width:100%">Color Theme</h1>
   <section>
     <h2>Base colors</h2>
@@ -35,4 +36,5 @@ import Page from '../../layout/page.astro';
     <PaletteColorDemo name="--chroma-key-99" />
   </section>
   </article>
+  </div>
 </Page>

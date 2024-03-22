@@ -17,7 +17,9 @@ const { Content } = await entry.render();
 
 <Page title={entry.data.name}>
   <ContentIndexTray slot="app-tray" collection="typography" />
-  <article class="content-grid">
-    <Content />
-  </article>
+  <div class="content-columns">
+    <article class="column-l">
+      <Content />
+    </article>
+  </div>
 </Page>

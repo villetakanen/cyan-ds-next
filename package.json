@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@11thdeg/cyan-next": "1.0.0-alpha.47",
     "@astrojs/check": "^0.3.1",
     "@astrojs/mdx": "^2.1.1",
     "astro": "^4.0.3",
